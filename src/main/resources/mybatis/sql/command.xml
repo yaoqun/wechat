@@ -20,42 +20,21 @@
   </insert>
 
   <select id="queryCommand" parameterType="com.wh.wechat.Command" resultMap="CommandResult">
-    SELECT * FROM command WHERE 1 != 1
-    <if test="name!=null &amp;&amp; name.trim().length()>0">
-      or name = #{name}
-    </if>
+    SELECT * FROM command
+    <where>
+      <if test="name!=null &amp;&amp; name.trim().length()>0">
+        name = #{name}
+      </if>
+    </where>
   </select>
   
   <delete id="deleteCommand" parameterType="String">
-    DELETE FROM command WHERE 1 != 1
-    <if test="_parameter!=null and _parameter.trim().length()>0">
-      or name = #{_parameter}
-    </if>
+    DELETE FROM command
+    <where>
+      <if test="_parameter!=null and _parameter.trim().length()>0">
+        name = #{_parameter}
+      </if>
+    </where>
   </delete>
 
-  <!--
-  <insert id="insert" parameterType="UserAlias" useGeneratedKeys="false">
-    INSERT INTO user
-    ( id,
-    username,
-    password,
-    administrator
-    )
-    VALUES
-    ( #{id},
-    #{username,jdbcType=VARCHAR},
-    #{password.encrypted:VARCHAR},
-    #{administrator,jdbcType=BOOLEAN}
-    )
-  </insert>
-
-  <update id="update" parameterType="UserAlias">
-    UPDATE user SET
-    username = #{username,jdbcType=VARCHAR},
-    password = #{password.encrypted,jdbcType=VARCHAR},
-    administrator = #{administrator,jdbcType=BOOLEAN}
-    WHERE
-    id = #{id,jdbcType=INTEGER}
-  </update>
-  -->
 </mapper>
