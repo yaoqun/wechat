@@ -18,36 +18,46 @@ import java.io.Reader;
 public class MybatisCommandDao implements CommandDao {
 
 	public boolean addCommand(Command command) {
-		int ret = 0;
 		SqlSession sess = null;
 		try {
 			sess = mSessFactory.openSession();
-			ret = sess.insert("Command.addCommand", command);
+			// sess.insert("com.wh.wechat.dao.impl.IMybatisCommand.addCommand", command);
+			IMybatisCommand icommand = sess.getMapper(IMybatisCommand.class);
+			icommand.addCommand(command);
 			sess.commit();
+			return true;
 		}
 		catch (PersistenceException e) {
 			MyLogger.logInfo(e.toString());
+			return false;
 		}
 		finally {
 			if (sess != null) {
 				sess.close();
 			}
 		}
-		return ret > 0;
 	}
 
 	public Command queryCommand(String name) {
 		SqlSession sess = mSessFactory.openSession();
 		Command command = new Command();  // 用于传递多个参数
 		command.setName(name);
-		command = sess.selectOne("Command.queryCommand", command);
+
+		// command = sess.selectOne("com.wh.wechat.dao.impl.IMybatisCommand.queryCommand", command);
+		IMybatisCommand dao = sess.getMapper(IMybatisCommand.class);
+		command = dao.queryCommand(command);
+
 		sess.close();
 		return command;
 	}
 
 	public void deleteCommand(String name) {
 		SqlSession sess = mSessFactory.openSession();
-		sess.delete("Command.deleteCommand", name);
+
+		// sess.delete("com.wh.wechat.dao.impl.IMybatisCommand.deleteCommand", name);
+		IMybatisCommand dao = sess.getMapper(IMybatisCommand.class);
+		dao.deleteCommand(name);
+
 		sess.commit();
 		sess.close();
 	}

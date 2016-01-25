@@ -4,7 +4,7 @@
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="Command">
+<mapper namespace="com.wh.wechat.dao.impl.IMybatisCommand">
 
   <resultMap type="com.wh.wechat.Command" id="CommandResult">
     <!-- jdbcType 属性即 java.sql.Types.INTEGER -->

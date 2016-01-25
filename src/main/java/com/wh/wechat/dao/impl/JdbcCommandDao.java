@@ -23,13 +23,15 @@ public class JdbcCommandDao implements CommandDao {
 			pstat.setString(1, command.getName());
 			pstat.setString(2, command.getComment());
 			pstat.setString(3, command.getContent());
-			int ret = pstat.executeUpdate();
-			return ret > 0;
+			pstat.executeUpdate();
+			return true;
 		}
 		catch (MySQLIntegrityConstraintViolationException e) {
+			return false;
 		}
 		catch (Exception e) {
 			MyLogger.logError(e.toString());
+			return false;
 		}
 		finally {
 			if (pstat != null) {
@@ -41,7 +43,6 @@ public class JdbcCommandDao implements CommandDao {
 				}
 			}
 		}
-		return false;
 	}
 
 	public Command queryCommand(String name) {
@@ -68,6 +69,7 @@ public class JdbcCommandDao implements CommandDao {
 		}
 		catch (Exception e) {
 			MyLogger.logError(e.toString());
+			return null;
 		}
 		finally {
 			if (rs != null) {
@@ -79,17 +81,16 @@ public class JdbcCommandDao implements CommandDao {
 				}
 			}
 		}
-		return null;
 	}
 
 	public void deleteCommand(String name) {
-		if (name == null) {
+		if (name == null || name.trim().length() == 0) {
 			return;
 		}
 		PreparedStatement pstat = null;
 		try {
 			pstat = mConn.prepareStatement(
-					"DELETE FORM command WHERE name=?");
+					"DELETE FROM command WHERE name=?");
 			pstat.setString(1, name);
 			pstat.executeUpdate();
 		}

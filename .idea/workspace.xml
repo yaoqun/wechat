@@ -28,8 +28,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -47,11 +53,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/Configuration.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/impl/MybatisCommandDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/Configuration.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/JdbcCommandDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/JdbcCommandDao.java" />
       </list>
     </option>
   </component>
@@ -120,8 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -366,11 +371,13 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -386,7 +393,7 @@
       <recent name="F:\javawh\wechat\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisCommandDaoTest.test">
+  <component name="RunManager" selected="JUnit.MybatisCommandDaoTest">
     <configuration default="false" name="JdbcCommandDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -768,10 +775,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.MybatisCommandDaoTest.test" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.JdbcCommandDaoTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.MybatisCommandDaoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcCommandDaoTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.JdbcCommandDaoTest.test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.JdbcCommandDaoTest.test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MybatisCommandDaoTest.test" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.CommandDaoTest.test" />
       </list>
     </recent_temporary>
@@ -792,34 +799,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 15h 56m 48s.xml">
+    <history-entry file="JdbcCommandDaoTest - 2016.01.25 at 11h 04m 00s.xml">
+      <configuration name="JdbcCommandDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcCommandDaoTest - 2016.01.25 at 11h 05m 56s.xml">
+      <configuration name="JdbcCommandDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcCommandDaoTest - 2016.01.25 at 11h 07m 24s.xml">
+      <configuration name="JdbcCommandDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JdbcCommandDaoTest_test - 2016.01.25 at 11h 02m 47s.xml">
+      <configuration name="JdbcCommandDaoTest.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisCommandDaoTest - 2016.01.25 at 11h 03m 16s.xml">
+      <configuration name="MybatisCommandDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MybatisCommandDaoTest_test - 2016.01.25 at 10h 53m 43s.xml">
       <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 15h 57m 58s.xml">
+    <history-entry file="MybatisCommandDaoTest_test - 2016.01.25 at 10h 54m 19s.xml">
       <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 00m 26s.xml">
+    <history-entry file="MybatisCommandDaoTest_test - 2016.01.25 at 10h 56m 13s.xml">
       <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 01m 13s.xml">
+    <history-entry file="MybatisCommandDaoTest_test - 2016.01.25 at 10h 57m 19s.xml">
       <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 02m 04s.xml">
-      <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 02m 30s.xml">
-      <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 02m 55s.xml">
-      <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 03m 28s.xml">
-      <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 16h 05m 02s.xml">
-      <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisCommandDaoTest_test - 2016.01.24 at 18h 39m 44s.xml">
+    <history-entry file="MybatisCommandDaoTest_test - 2016.01.25 at 10h 59m 09s.xml">
       <configuration name="MybatisCommandDaoTest.test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -909,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/CommandDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.385">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5947368">
@@ -943,37 +942,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/JdbcCommandDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.695">
-          <caret line="91" column="46" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.385">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.75">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,11 +957,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/CommandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.385">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74210525">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.25789472">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/JdbcCommandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.315">
+          <caret line="92" column="31" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.405">
+          <caret line="31" column="65" selection-start-line="31" selection-start-column="65" selection-end-line="31" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.875">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
