@@ -26,15 +26,23 @@ public class CommandDaoTest {
 
 		Command ret = mDao.queryCommand(command.getName());
 		assertNotNull(ret);
-		if (ret != null) {
-			assertEquals(ret.getName(), command.getName());
-			assertEquals(ret.getComment(), command.getComment());
-			assertEquals(ret.getContent(), command.getContent());
-		}
+		assertEquals(ret.getName(), command.getName());
+		assertEquals(ret.getComment(), command.getComment());
+		assertEquals(ret.getContent(), command.getContent());
 
 		mDao.deleteCommand(command.getName());
 		ret = mDao.queryCommand(command.getName());
 		assertNull(ret);
+	}
+
+	protected Command addRandomCommand() {
+		Command command = randCommand();
+		mDao.addCommand(command);
+		return command;
+	}
+
+	protected void deleteCommand(Command command) {
+		mDao.deleteCommand(command.getName());
 	}
 
 	private Command randCommand() {

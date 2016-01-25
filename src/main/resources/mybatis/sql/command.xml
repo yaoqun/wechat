@@ -37,4 +37,16 @@
     </where>
   </delete>
 
+  <select id="countCommand" resultType="int">
+    SELECT COUNT(*) FROM command;
+  </select>
+
+  <select id="queryCommandList"
+          parameterType="com.wh.wechat.pagination.Page"
+          resultMap="CommandResult">
+    SELECT * FROM command
+    ORDER BY id
+    LIMIT ${itemStart}, ${ItemNumOfEachPage}
+  </select>
+
 </mapper>

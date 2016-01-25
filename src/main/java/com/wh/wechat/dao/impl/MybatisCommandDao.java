@@ -3,6 +3,7 @@ package com.wh.wechat.dao.impl;
 import com.wh.wechat.Command;
 import com.wh.wechat.MyLogger;
 import com.wh.wechat.dao.CommandDao;
+import com.wh.wechat.pagination.Page;
 import org.apache.ibatis.exceptions.PersistenceException;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -11,6 +12,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.Reader;
+import java.util.List;
 
 /**
  * Created by Whiker on 2016/1/24.
@@ -60,6 +62,16 @@ public class MybatisCommandDao implements CommandDao {
 
 		sess.commit();
 		sess.close();
+	}
+
+	public int countCommand() {
+		SqlSession sess = mSessFactory.openSession();
+		return sess.getMapper(IMybatisCommand.class).countCommand();
+	}
+
+	public List<Command> queryCommandList(Page page) {
+		SqlSession sess = mSessFactory.openSession();
+		return sess.getMapper(IMybatisCommand.class).queryCommandList(page);
 	}
 
 	private static MybatisCommandDao mybatisCommandDao = new MybatisCommandDao();

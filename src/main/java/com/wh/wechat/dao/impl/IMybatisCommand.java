@@ -1,16 +1,23 @@
 package com.wh.wechat.dao.impl;
 
 import com.wh.wechat.Command;
+import com.wh.wechat.pagination.Page;
+
+import java.util.List;
 
 /**
  * Created by Whiker on 2016/1/25.
  */
 public interface IMybatisCommand {
 
-	public void addCommand(Command command);
+	void addCommand(Command command);
 
-	public Command queryCommand(Command command);
+	Command queryCommand(Command command);
 
-	public void deleteCommand(String commandName);
+	void deleteCommand(String commandName);
+
+	int countCommand();
+
+	List<Command> queryCommandList(Page page);
 
 }
