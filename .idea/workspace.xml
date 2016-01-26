@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bc97edd-7d93-4bcc-9655-a2b45ff97071" name="Default" comment="interceptor">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/impl/PaginationServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/intercept/PaginationInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/impl/PaginationServiceImplTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/PaginationService.java" afterPath="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/PaginationService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/Configuration.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/Configuration.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java" />
-    </list>
+    <list default="true" id="9bc97edd-7d93-4bcc-9655-a2b45ff97071" name="Default" comment="" />
     <ignored path="wechat.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,7 +22,20 @@
     <favorites_list name="wechat" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="PaginationServiceTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7083333">
+              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <element signature="e#724#733#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -70,19 +70,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/CommandPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/test/CommandGenerator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/Page.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/PaginationService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/PaginationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/impl/PaginationServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/impl/PaginationServiceImplTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/Configuration.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/intercept/PaginationInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java" />
       </list>
     </option>
   </component>
@@ -979,7 +979,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453716540455</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="addBatch &amp; deleteBatch">
+      <created>1453800597466</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1453800597466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -998,11 +1004,11 @@
     <history-entry file="PaginationServiceInterceptorTest - 2016.01.26 at 16h 39m 03s.xml">
       <configuration name="PaginationServiceInterceptorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaginationServiceTest_test - 2016.01.25 at 17h 57m 30s.xml">
-      <configuration name="PaginationServiceTest.test" configurationId="JUnit" />
+    <history-entry file="PaginationServiceInterceptorTest - 2016.01.26 at 17h 27m 02s.xml">
+      <configuration name="PaginationServiceInterceptorTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PaginationServiceTest_test - 2016.01.25 at 18h 04m 24s.xml">
-      <configuration name="PaginationServiceTest.test" configurationId="JUnit" />
+    <history-entry file="PaginationServiceInterceptorTest - 2016.01.26 at 17h 27m 34s.xml">
+      <configuration name="PaginationServiceInterceptorTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PaginationServiceTest_test - 2016.01.25 at 18h 05m 13s.xml">
       <configuration name="PaginationServiceTest.test" configurationId="JUnit" />
@@ -1016,7 +1022,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="742" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32857144" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1027,7 +1033,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51746035" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34126985" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25183016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25183016" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1053,7 +1059,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
+    <MESSAGE value="addBatch &amp; deleteBatch" />
+    <option name="LAST_COMMIT_MESSAGE" value="addBatch &amp; deleteBatch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1155,13 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/PaginationService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28">
@@ -1190,14 +1190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.54">
-          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptorTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42">
@@ -1216,30 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3">
-          <caret line="76" column="50" selection-start-line="76" selection-start-column="50" selection-end-line="76" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/pagination/impl/PaginationServiceInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.665">
@@ -1253,7 +1221,49 @@
         <state vertical-scroll-proportion="0.385">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/IMybatisCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wh/wechat/dao/impl/MybatisCommandDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.825">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/sql/command.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.6894736">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/dao/CommandDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.685">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wh/wechat/pagination/PaginationServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7083333">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <element signature="e#724#733#0" expanded="true" />
           </folding>
         </state>
       </provider>
