@@ -49,4 +49,10 @@
     LIMIT ${itemStart}, ${ItemNumOfEachPage}
   </select>
 
+  <select id="queryCommandListIntercept"
+          parameterType="com.wh.wechat.pagination.Page"
+          resultMap="CommandResult">
+    SELECT * FROM command
+  </select>
+
 </mapper>

@@ -74,6 +74,11 @@ public class MybatisCommandDao implements CommandDao {
 		return sess.getMapper(IMybatisCommand.class).queryCommandList(page);
 	}
 
+	public List<Command> queryCommandListIntercept(Page page) {
+		SqlSession sess = mSessFactory.openSession();
+		return sess.getMapper(IMybatisCommand.class).queryCommandListIntercept(page);
+	}
+
 	private static MybatisCommandDao mybatisCommandDao = new MybatisCommandDao();
 
 	public static MybatisCommandDao getInstance() { return mybatisCommandDao; }

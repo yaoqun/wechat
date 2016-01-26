@@ -20,4 +20,6 @@ public interface IMybatisCommand {
 
 	List<Command> queryCommandList(Page page);
 
+	List<Command> queryCommandListIntercept(Page page);
+
 }
