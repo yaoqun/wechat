@@ -64,19 +64,39 @@ public class MybatisCommandDao implements CommandDao {
 		sess.close();
 	}
 
+	public void addCommandList(List<Command> commands) {
+		SqlSession sess = mSessFactory.openSession();
+		sess.getMapper(IMybatisCommand.class).addCommandList(commands);
+		sess.commit();
+		sess.close();
+	}
+
+	public void deleteCommandList(List<Command> commands) {
+		SqlSession sess = mSessFactory.openSession();
+		sess.getMapper(IMybatisCommand.class).deleteCommandList(commands);
+		sess.commit();
+		sess.close();
+	}
+
 	public int countCommand() {
 		SqlSession sess = mSessFactory.openSession();
-		return sess.getMapper(IMybatisCommand.class).countCommand();
+		int n = sess.getMapper(IMybatisCommand.class).countCommand();
+		sess.close();
+		return n;
 	}
 
 	public List<Command> queryCommandList(Page page) {
 		SqlSession sess = mSessFactory.openSession();
-		return sess.getMapper(IMybatisCommand.class).queryCommandList(page);
+		List<Command> ret = sess.getMapper(IMybatisCommand.class).queryCommandList(page);
+		sess.close();
+		return ret;
 	}
 
 	public List<Command> queryCommandListIntercept(Page page) {
 		SqlSession sess = mSessFactory.openSession();
-		return sess.getMapper(IMybatisCommand.class).queryCommandListIntercept(page);
+		List<Command> ret = sess.getMapper(IMybatisCommand.class).queryCommandListIntercept(page);
+		sess.close();
+		return ret;
 	}
 
 	private static MybatisCommandDao mybatisCommandDao = new MybatisCommandDao();

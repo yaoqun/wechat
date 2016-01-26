@@ -6,6 +6,11 @@ import com.wh.wechat.dao.impl.MybatisCommandDao;
 import com.wh.wechat.pagination.impl.PaginationServiceImpl;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+
 /**
  * Created by Whiker on 2016/1/25.
  */
@@ -22,10 +27,13 @@ public class PaginationServiceTest extends CommandDaoTest {
 		final int CommandNum = 11;
 
 		// 初始化
-		Command[] commands = new Command[CommandNum];
+		List<Command> commands = new ArrayList<Command>(CommandNum);
 		for (int i = 0; i < CommandNum; i++) {
-			commands[i] = addRandomCommand();
+			commands.add(randCommand());
 		}
+		MybatisCommandDao dao = MybatisCommandDao.getInstance();
+		dao.addCommandList(commands);
+		assertEquals(dao.countCommand(), CommandNum);
 
 		// 打印各个页面
 		StringBuilder str = new StringBuilder();
@@ -42,9 +50,8 @@ public class PaginationServiceTest extends CommandDaoTest {
 		}
 
 		// 清理
-		for (Command command : commands) {
-			deleteCommand(command);
-		}
+		dao.deleteCommandList(commands);
+		assertEquals(dao.countCommand(), 0);
 
 		System.out.println(str.toString());
 	}

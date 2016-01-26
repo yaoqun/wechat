@@ -37,6 +37,21 @@
     </where>
   </delete>
 
+  <insert id="addCommandList" parameterType="java.util.List">
+    INSERT INTO command(name, comment, content) VALUES
+    <foreach collection="list" item="command" separator=",">
+      (#{command.name}, #{command.comment}, #{command.content})
+    </foreach>
+  </insert>
+
+  <delete id="deleteCommandList" parameterType="java.util.List">
+    DELETE FROM command WHERE name IN (
+    <foreach collection="list" item="command" separator=",">
+      #{command.name}
+    </foreach>
+    )
+  </delete>
+
   <select id="countCommand" resultType="int">
     SELECT COUNT(*) FROM command;
   </select>

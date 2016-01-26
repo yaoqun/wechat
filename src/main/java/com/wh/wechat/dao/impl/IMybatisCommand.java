@@ -16,6 +16,10 @@ public interface IMybatisCommand {
 
 	void deleteCommand(String commandName);
 
+	void addCommandList(List<Command> commands);
+
+	void deleteCommandList(List<Command> commands);
+
 	int countCommand();
 
 	List<Command> queryCommandList(Page page);

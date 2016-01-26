@@ -45,7 +45,7 @@ public class CommandDaoTest {
 		mDao.deleteCommand(command.getName());
 	}
 
-	private Command randCommand() {
+	protected Command randCommand() {
 		Command command = new Command();
 		command.setName(UUID.randomUUID().toString());
 		command.setComment("注释");
